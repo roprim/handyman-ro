@@ -1,27 +1,27 @@
-.whatsapp-button {
-    position: fixed;
-    width: 60px; /* Adjust as needed */
-    height: 60px; /* Adjust as needed */
-    bottom: 20px; /* Adjust vertical position */
-    right: 20px; /* Adjust horizontal position */
-    background-color: #25D366; /* WhatsApp green */
-    color: white;
-    border-radius: 50%;
+.whatsapp-float {
+    position: fixed; /* Makes it float */
+    width: 60px;
+    height: 60px;
+    bottom: 40px; /* Adjust vertical position */
+    right: 40px; /* Adjust horizontal position */
+    background-color: #25d366; /* WhatsApp green */
+    color: #FFF;
+    border-radius: 50%; /* Makes it circular */
     text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    z-index: 1000; /* Ensure it stays on top */
-    display: flex;
+    font-size: 30px; /* Icon size */
+    box-shadow: 2px 2px 3px #999; /* Subtle shadow */
+    z-index: 100; /* Ensures it's on top of other content */
+    display: flex; /* For centering the icon */
     justify-content: center;
     align-items: center;
-    transition: transform 0.3s ease-in-out; /* Add a subtle animation */
+    text-decoration: none; /* Remove underline from link */
 }
 
-.whatsapp-button:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
+.whatsapp-float:hover {
+    background-color: #128C7E; /* Darker green on hover */
 }
 
-.whatsapp-button img {
-    width: 40px; /* Adjust icon size */
-    height: 40px; /* Adjust icon size */
+/* If you're using Font Awesome, you might need some margin for the icon */
+.whatsapp-float .fa {
+    margin-top: 2px; /* Adjust as needed */
 }
